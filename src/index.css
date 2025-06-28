@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-x-hidden text-primary font-secondary bg-white text-lg;
+    height: 100%;
+  }
+  .h1 {
+    @apply text-[54px] lg:text-[50px] font-primary capitalize leading-[120%] tracking-[-0.05em] mb-2;
+    /* font-primary font-bold */
+  }
+  .section {
+    @apply min-h-screen w-screen;
+  }
+  .btn {
+    @apply py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-primary bg-primary text-white;
+  }
+}
+  @layer components {
+    .about-name {
+      @apply text-3xl lg:text-4xl font-secondary italic mb-2;
+    }
+    .about-title { 
+      @apply text-lg lg:text-xl font-secondary italic mb-6;
+    }
+    .about-list { 
+      @apply list-inside font-secondary text-base;
+    }
+    .about-list li {
+      @apply mb-2;
+    }
+    .gear-title {
+      @apply text-xl font-primary mb-6 relative pb-0 inline-block;
+
+      background-image: url('./img/about/underline-hand-drawn.svg');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100px 5px;
+    }
+    .gear-list {
+      @apply font-secondary text-base;
+    }
+    .gear-list li {
+      @apply mb-4;
+    }
+    .about-socials {
+      @apply font-secondary inline-block text-center;
+
+      background-image: url('./img/about/circle-hand-drawn.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 38px;
+
+      padding: 8px 30px;
+    
+    }
+}
+  
