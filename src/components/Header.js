@@ -1,11 +1,10 @@
 import React from 'react';
 // import components
-import Logo from '../img/header/JT-felder.png';
+import Logo from '../img/header/JT-logo.svg';
 
 import MobileNav from './MobileNav';
 // import Link
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -14,7 +13,7 @@ const Header = () => {
       <div className='flex flex-col lg:flex-row
       lg:items-center w-full justify-between font-third text-base'>
         {/* Logo */}
-        <Link to={'/'} className='max-w-[200px]'>
+        <Link to={'/'} className='max-w-[200px] w-fit '>
           <img src={Logo} alt='' />
         </Link>
         {/* nav - initially hidden - show on desktop mode */}
