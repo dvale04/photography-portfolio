@@ -1,6 +1,6 @@
 import React from 'react';
 // import components
-import Logo from '../img/header/WUNUVUS-4.svg';
+import Logo from '../img/header/JT-felder.png';
 
 import MobileNav from './MobileNav';
 // import Link
@@ -26,6 +26,7 @@ const Header = () => {
             transition ${isActive ? 'border-b border-current pb-[1px]' : ''}`
             }
           >
+        {/* border-b border-current... to add the underline only on click */}
             About
           </NavLink>
           <NavLink 
