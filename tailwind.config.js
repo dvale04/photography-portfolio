@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {
       fontSize: {
-        'base': ['16px', '24px'],
+        'base': ['16px', '22px'],
       },
       colors: {
         primary: '#0E1112',

@@ -1,10 +1,11 @@
 import React from 'react';
 // import components
 import Logo from '../img/header/WUNUVUS-4.svg';
+
 import MobileNav from './MobileNav';
 // import Link
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
 
 const Header = () => {
   return (
@@ -19,34 +20,39 @@ const Header = () => {
         {/* nav - initially hidden - show on desktop mode */}
         <nav className='hidden xl:flex gap-x-14
         '>
-          <Link 
+          <NavLink 
             to={'/about'} 
-            className='text hover:text-primary 
-            transition'
+            className={({ isActive }) => `text hover:text-primary 
+            transition ${isActive ? 'border-b border-current pb-[1px]' : ''}`
+            }
           >
             About
-          </Link>
-          <Link 
+          </NavLink>
+          <NavLink 
             to={'/3d-prints'} 
-            className='text hover:text-primary 
-            transition'
+            className={({ isActive }) => `text hover:text-primary 
+            transition ${isActive ? 'border-b border-current pb-[1px]' : ''}`
+            }
           >
             3D Prints
-          </Link>
-          <Link 
+          </NavLink>
+          <NavLink 
             to={'/portfolio'} 
-            className='text hover:text-primary 
-            transition'
+            className={({ isActive }) => `text hover:text-primary 
+            transition ${isActive ? 'border-b border-current pb-[1px]' : ''}`
+            }
           >
+        
             Portfolio
-          </Link>
-          <Link 
+          </NavLink>
+          <NavLink 
             to={'/contact'} 
-            className='text hover:text-primary 
-            transition'
+            className={({ isActive }) => `text hover:text-primary 
+            transition ${isActive ? 'border-b border-current pb-[1px]' : ''}`
+            }
           >
             Contact
-          </Link>
+          </NavLink>
         </nav>
       </div>
       {/* socials */}
