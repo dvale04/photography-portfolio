@@ -53,7 +53,18 @@
       background-position: center;
       background-size: 100% 38px;
 
-      padding: 8px 30px;
+      padding: 13px 30px;
+    
+    }
+    .about-socialss {
+      @apply text-xl font-primary mb-6 relative pb-0 inline-block;
+
+      background-image: url('./img/about/underline-hand-drawn.svg');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100px 5px;
+
+      padding: 5px 30px;
     
     }
 }
