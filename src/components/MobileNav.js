@@ -39,14 +39,14 @@ const MobileNav = () => {
 
   return (
     <nav className='text-primary xl:hidden'>
-      {/* nav open button */}
+      {/* nav open button plus sign x sign */}
       <motion.div 
         onClick={()=> setOpenMenu(!openMenu)} 
         animate={{ rotate: openMenu ? 45 : 0 }}
         transition={{ duration: 0.3 }}
-        className='text-3xl cursor-pointer absolute top-5 right-7 z-50'>
+        className='text-3xl cursor-pointer absolute top-9 right-9 z-50'>
         <svg
-          className={`w-6 h-6 stroke-[1.5] stroke-black transition-transform duration-300 ${
+          className={`w-6 h-6 stroke-[1.3] stroke-black transition-transform duration-300 ${
             openMenu ? 'rotate-25' : 'rotate-0'
           }`}
           viewBox="0 0 24 24"
@@ -66,11 +66,11 @@ const MobileNav = () => {
             initial='hidden'
             animate={"show"}
             exit="hidden"
-            className='bg-white shadow-2xl w-full fixed top-0 
+            className='bg-white shadow-3xl w-full fixed top-0 
             right-0 h-screen z-20'>
             {/* menu List */}
             <ul className='h-full flex flex-col justify-center
-            items-center gap-y-4 text-primary font-third text-4xl'>
+            items-start gap-y-4 text-primary font-third text-4xl pl-8'>
               <li>
                 <Link to='/about' onClick={() => setOpenMenu(false)}>About</Link>
               </li>
