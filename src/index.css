@@ -32,9 +32,10 @@
       @apply mb-2;
     }
     .gear-title {
+      /* underlines for gear in contact page */
       @apply text-xl font-primary mb-6 relative pb-0 inline-block;
 
-      background-image: url('./img/about/underline-hand-drawn.svg');
+      background-image: url('./img/contact/underline-hand-drawn.svg');
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: 100px 5px;
@@ -48,7 +49,7 @@
     .about-socials {
       @apply font-secondary inline-block text-center;
 
-      background-image: url('./img/about/circle-hand-drawn.svg');
+      background-image: url('./img/contact/circle-hand-drawn.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100% 38px;
@@ -57,14 +58,15 @@
     
     }
     .about-socialss {
+      /* second underline for email in contact page */
       @apply text-xl font-primary mb-6 relative pb-0 inline-block;
 
-      background-image: url('./img/about/underline-hand-drawn.svg');
+      background-image: url('./img/contact/uunderline-hand-drawn.svg');
       background-repeat: no-repeat;
       background-position: bottom;
-      background-size: 100px 5px;
+      background-size: 160px 10px;
 
-      padding: 5px 30px;
+      padding: 7px 30px;
     
     }
 }

@@ -41,12 +41,11 @@ const Contact = () => {
           >
             
             {/* Column 1 */}
-            <h3 className='about-name'>J.T. Felder</h3>
             <p className='about-title'>Co-Founder | Cinematographer, Photographer & Editor</p>
             <ul className='about-list text-left mx-auto max-w-sm'>
-              <li>U.S. Army Veteran with a love for creative projects</li>
-              <li>Currently pursuing a Bachelor's Degree in Digital Cinematography</li>
-              <li>Skilled in 3D Printing</li>
+              <p>Jathaniel Felder is an Illinois born cinematographer, photographer & editor
+                  U.S. Army Veteran with a love for creative projects.
+                  He is currently pursuing a Bachelor's Degree in Digital Cinematography, skilled in 3D Printing, and available for comission.</p>
               <li>
                 <span className="about-socials">
                   <span className="mr-1">Instagram:</span>
@@ -56,8 +55,9 @@ const Contact = () => {
                 </span>
               </li>
               <li>
-                <span className="about-socials">
+                <span className="about-socialss">
                   wunuvus@gmail.com
+                  
                 </span>
               </li>
             </ul>
