@@ -1,0 +1,11 @@
+<svg viewBox="0 00 220 50" xmlns="http://www.w3.org/2000/svg">
+  <ellipse 
+    cx="110" 
+    cy="25" 
+    rx="105" 
+    ry="14" 
+    stroke="#0E1112" 
+    fill="transparent" 
+    stroke-width="1"
+  />
+</svg>

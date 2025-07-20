@@ -70,10 +70,7 @@ const MobileNav = () => {
             right-0 h-screen z-20'>
             {/* menu List */}
             <ul className='h-full flex flex-col justify-center
-            items-start gap-y-4 text-primary font-third text-4xl pl-8'>
-              <li>
-                <Link to='/about' onClick={() => setOpenMenu(false)}>About</Link>
-              </li>
+            items-start gap-y-4 text-primary font-third text-4xl pl-8'> 
               <li>
                 <Link to='/portfolio' onClick={() => setOpenMenu(false)}>Portfolio</Link>
               </li>

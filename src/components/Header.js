@@ -19,15 +19,8 @@ const Header = () => {
         {/* nav - initially hidden - show on desktop mode */}
         <nav className='hidden xl:flex gap-x-14
         '>
-          <NavLink 
-            to={'/about'} 
-            className={({ isActive }) => `text hover:text-primary text-grey
-            transition ${isActive ? 'border-b border-current pb-[1px]' : ''}`
-            }
-          >
-        {/* border-b border-current... to add the underline only on click */}
-            About
-          </NavLink>
+          
+        {/* border-b border-current... to add the underline only on click */} 
           <NavLink 
             to={'/3d-prints'} 
             className={({ isActive }) => `text hover:text-primary text-grey
