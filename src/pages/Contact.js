@@ -1,84 +1,102 @@
 import React from 'react';
 // import images
-import JTImg from '../img/contact/jt-photo.png';
-// import motion 
-import { motion } from 'framer-motion';
+import AboutImg from '../img/about/about.png';
+import JTImg from '../img/about/jt-photo.png'; 
+import IsaiahImg from '../img/about/isaiah-photo.png'; 
+// import link
+import { Link } from 'react-router-dom'
+// import motion
+import { motion } from 'framer-motion'
 // import transition
-import { transition1 } from '../transitions';
+import { transition1 } from '../transitions'
 
 const Contact = () => {
   return (
-  <motion.section 
-    initial={{ opacity: 0 }} 
-    animate={{ opacity: 1 }}
-    exit={{ opacity: 0 }}
-    tranisiton={transition1}
-    className='section bg-white'
-  >
-    <div className='container mx-auto h-full'>
-      <div className='flex flex-col lg:flex-row h-full
-      items-center justify-start pt-36 gap-x-8 text-center
-      lg:text-left'>
-        {/* bg */}
-        <motion.div 
-          initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          tranisiton={transition1}
-          className='hidden lg:flex bg-[#eef7f9]
-          absolute bottom-0 left-0 right-0 top-72 -z-10'
-        >
-        </motion.div>
-        {/* text & form */}
-        <div className='lg:flex-1 lg:pt-32 px-4'>
-          <h1 className= 'h1'>Contact</h1>
-          <p className='mb-12'>Reach out to book a session, request a quote, or ask a question. We're here to help!</p>
-          {/* form */}
-          <form className='flex flex-col gap-y-4'>
-            <div className='flex gap-x-10'>
-              <input
-               className='outline-none border-b
-               border-b-primary h-[60px] bg-transparent
-               font-secondary w-full pl-3 
-               placeholder:text-[#757879]' 
-               type='text' 
-               placeholder= 'Your name'
-              />
-              <input
-               className='outline-none border-b
-               border-b-primary h-[60px] bg-transparent
-               font-secondary w-full pl-3 
-               placeholder:text-[#757879]' 
-               type='text' 
-               placeholder= 'Your email address'
-              />
-            </div>
-            <input
-               className='outline-none border-b
-               border-b-primary h-[60px] bg-transparent
-               font-secondary w-full pl-3 
-               placeholder:text-[#757879]' 
-               type='text' 
-               placeholder= 'Your message'
-              />
-              <button className='btn mb-[30px] mx-auto
-              lg:mx-0 self-start'>
-                Send it
-              </button>
-          </form>
+    <motion.section 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={transition1}
+      className='section'
+    > 
+      <div className='container mx-auto relative'>
+        {/* text & img wrapper */}
+        <div className='flex flex-col lg:flex-row min-h-screen 
+        items-center justify-center gap-x-24 text-center 
+        lg:text-left lg:pt-16'>
+          {/* image */}
+          <div className='flex-1 max-h-96 lg:max-h-max 
+          order-2 lg:order-none overflow-hidden'>
+            <img src={AboutImg} alt='' />
+          </div>
+          {/* text */}
+          <motion.div 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={transition1}
+            className='flex-1 pt-36 pb-14 lg:pt-0
+            lg:w-auto z-10 flex flex-col justify-center 
+            items-center lg:items-start px-8'
+          >
+            
+            {/* Column 1 */}
+            <h3 className='about-name'>J.T. Felder</h3>
+            <p className='about-title'>Co-Founder | Cinematographer, Photographer & Editor</p>
+            <ul className='about-list text-left mx-auto max-w-sm'>
+              <li>U.S. Army Veteran with a love for creative projects</li>
+              <li>Currently pursuing a Bachelor's Degree in Digital Cinematography</li>
+              <li>Skilled in 3D Printing</li>
+              <li>
+                <span className="about-socials">
+                  <span className="mr-1">Instagram:</span>
+                  <a href="https://www.instagram.com/wunuvus" target="_blank" rel="noopener noreferrer">
+                    @wunuvus
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span className="about-socials">
+                  wunuvus@gmail.com
+                </span>
+              </li>
+            </ul>
+          </motion.div>
         </div>
-        { /* image */}
-        <motion.div 
-          initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          tranisiton={transition1}
-          className='lg:flex-1'
-        >
-          <img src={JTImg}alt=''/>
-        </motion.div>
-      </div>
-    </div>
+
+          <div className='py-4'>
+            <h2 className='h1 text-center mb-16'>Gear</h2>
+            <div className='flex flex-col lg:flex-row text-center lg:text-left gap-y-12 lg:gap-x-8'>
+              <div className='flex-1'>
+                <h3 className='gear-title'>Cameras</h3>
+                <ul className='gear-list'>
+                  <li>Sony FX6 Cinema Camera - ($7,000)</li>
+                  <li>Black Magic Pocket Cinema Camera 4K - ($1,000)</li>
+                  <li>Panasonic Lumix G9 - ($1,000)</li>
+                  <li>Panasonic Lumix G10 - ($300)</li>
+                  <li>Lenses ranging from 13-200mm</li>
+                </ul>
+              </div>
+
+              <div className='flex-1'>
+                <h3 className='gear-title'>Audio</h3>
+                <ul className='gear-list'>
+                  <li>Zoom H1n & H2n Handy Recorders - ($100)</li>
+                  <li>Multiple Lav Mics - ($50)</li>
+                  <li>Hollyland M1 Wireless Lav Mics</li>
+                </ul>
+              </div>
+
+              <div className='flex-1'>
+                <h3 className='gear-title'>Other Gear</h3>
+                <ul className='gear-list'>
+                  <li>10 x 10 Qoolfoto Heavy Duty Background Frame - ($140)</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
   </motion.section>
   );
 };
