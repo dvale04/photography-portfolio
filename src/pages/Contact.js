@@ -57,15 +57,14 @@ const Contact = () => {
               <li>
                 <span className="about-socialss">
                   wunuvus@gmail.com
-                  
                 </span>
               </li>
             </ul>
           </motion.div>
         </div>
 
-          <div className='py-4'>
-            <h2 className='h1 text-center mb-16'>Gear</h2>
+          <div className='py-6'>
+            <h2 className='h1-normal text-start mb-7 italic'>Gear;</h2>
             <div className='flex flex-col lg:flex-row text-center lg:text-left gap-y-12 lg:gap-x-8'>
               <div className='flex-1'>
                 <h3 className='gear-title'>Cameras</h3>

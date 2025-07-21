@@ -7,8 +7,14 @@
     @apply overflow-x-hidden text-primary font-secondary bg-white text-lg;
     height: 100%;
   }
+  .h1-normal {
+    @apply text-xl font-secondary text-base mb-6 relative pb-0 inline-block;
+
+    @apply text-[34px] lg:text-[34px] font-secondary font-normal capitalize leading-[120%] tracking-[-0.05em] mb-2;
+    
+  }
   .h1 {
-    @apply text-[54px] lg:text-[50px] font-primary capitalize leading-[120%] tracking-[-0.05em] mb-2;
+    @apply text-[54px] lg:text-[50px] font-primary font-bold capitalize leading-[120%] tracking-[-0.05em] mb-2;
     /* font-primary font-bold */
   }
   .section {
@@ -64,9 +70,9 @@
       background-image: url('./img/contact/uunderline-hand-drawn.svg');
       background-repeat: no-repeat;
       background-position: bottom;
-      background-size: 160px 10px;
+      background-size: 168px 10px;
 
-      padding: 7px 30px;
+      padding: 7px 150px;
     
     }
 }

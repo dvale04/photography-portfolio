@@ -1,18 +1,18 @@
-<svg viewBox="0 00 220 50" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 00 220 45" xmlns="http://www.w3.org/2000/svg">
   <ellipse 
     cx="110" 
-    cy="27" 
-    rx="105" 
-    ry="18" 
+    cy="25" 
+    rx="103" 
+    ry="16" 
     stroke="#0E1112" 
     fill="transparent" 
-    stroke-width="2"
+    stroke-width="1.7"
   />
   <path 
-    d="M 165,46 C 82,45 92,44 112,44.5" 
+    d="M 175,42 C 81,41 68,39 107,40.5" 
     stroke="#0E1112" 
     fill="transparent" 
-    stroke-width="2" 
+    stroke-width="1.5" 
     
   />
 </svg> 
