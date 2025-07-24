@@ -47,7 +47,7 @@ const Contact = () => {
                   U.S. Army Veteran with a love for creative projects.
                   He is currently pursuing a Bachelor's Degree in Digital Cinematography, skilled in 3D Printing, and available for comission.</p>
               <li>
-                <span className="about-socials">
+                <span className="about-socials mt-8">
                   <span className="mr-1">Instagram:</span>
                   <a href="https://www.instagram.com/wunuvus" target="_blank" rel="noopener noreferrer">
                     @wunuvus
@@ -63,7 +63,7 @@ const Contact = () => {
           </motion.div>
         </div>
 
-          <div className='py-6'>
+          <div className='py-16 px-7'>
             <h2 className='h1-normal text-start mb-7 italic'>Gear;</h2>
             <div className='flex flex-col lg:flex-row text-center lg:text-left gap-y-12 lg:gap-x-8'>
               <div className='flex-1'>
