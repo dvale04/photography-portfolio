@@ -6,6 +6,7 @@ module.exports = {
       secondary: ['EB Garamond', 'serif'],
       third: ['PT Serif', 'serif'],
       fourth: ['Swear Display', 'serif'],
+      fifth: ['Sorts Mill Goudy']
     },
     screens: {
       sm: '640px',
@@ -16,11 +17,13 @@ module.exports = {
     extend: {
       fontSize: {
         'base': ['16px', '22px'],
+        'other': ['17px', '26px'],
       },
       colors: {
         primary: '#0E1112',
         grey: '#484B4B',
         accent: '#EEF7F9',
+        black: '#000000',
       },
     },
   },

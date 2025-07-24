@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: 'Sorts Mill Goudy';
+    src: url('./fonts/SortsMillGoudy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
   body {
     @apply overflow-x-hidden text-primary font-secondary bg-white text-lg;
     height: 100%;
@@ -30,7 +36,8 @@
       @apply text-lg lg:text-xl font-secondary italic mb-6;
     }
     .about-list { 
-      @apply list-inside font-secondary text-base;
+      /*for about paragraph*/
+      @apply list-inside font-fifth text-[17px] leading-[26px] text-black;
     }
     .about-list li {
       @apply mb-2;
