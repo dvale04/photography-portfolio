@@ -33,18 +33,18 @@
       @apply text-3xl lg:text-4xl font-secondary italic mb-2;
     }
     .about-title { 
-      @apply text-lg lg:text-xl font-secondary italic mb-6;
+      @apply text-lg lg:text-xl font-secondary italic text-greyy mb-6;
     }
     .about-list { 
       /*for about paragraph*/
-      @apply list-inside font-fifth text-[17px] leading-[26px] text-black;
+      @apply list-inside font-fifth text-[17px] leading-[26px] text-greyy;
     }
     .about-list li {
       @apply mb-2;
     }
     .gear-title {
       /* underlines for gear in contact page */
-      @apply text-xl font-primary mb-6 relative pb-0 inline-block;
+      @apply text-xl font-primary mb-6 relative pb-0 inline-block text-greyy;
 
       background-image: url('./img/contact/underline-hand-drawn.svg');
       background-repeat: no-repeat;
@@ -52,13 +52,13 @@
       background-size: 100px 5px;
     }
     .gear-list {
-      @apply font-secondary text-base;
+      @apply font-secondary text-base text-greyy;
     }
     .gear-list li {
       @apply mb-1;
     }
     .about-socials {
-      @apply font-secondary inline-block text-center;
+      @apply font-secondary inline-block text-greyy text-center;
 
       background-image: url('./img/contact/circle-hand-drawn.svg');
       background-repeat: no-repeat;
@@ -70,7 +70,7 @@
     }
     .about-socialss {
       /* second underline for email in contact page */
-      @apply text-xl font-primary mb-6 relative pb-0 inline-block;
+      @apply text-xl font-primary mb-6 relative pb-0 inline-block text-greyy;
 
       background-image: url('./img/contact/uunderline-hand-drawn.svg');
       background-repeat: no-repeat;

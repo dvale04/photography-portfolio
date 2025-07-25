@@ -45,7 +45,7 @@ const Contact = () => {
             <ul className='about-list text-left mx-auto max-w-sm'>
               <p>Jathaniel Felder is an Illinois born cinematographer, photographer & editor
                   U.S. Army Veteran with a love for creative projects.
-                  He is currently pursuing a Bachelor's Degree in Digital Cinematography, skilled in 3D Printing, and available for comission.</p>
+                  He is currently pursuing a Bachelor's Degree in Digital Cinematography, skilled in 3D Printing, and available for commission.</p>
               <li>
                 <span className="about-socials mt-8">
                   <span className="mr-1">Instagram:</span>
@@ -64,7 +64,7 @@ const Contact = () => {
         </div>
 
           <div className='py-16 px-7'>
-            <h2 className='h1-normal text-start mb-7 italic'>Gear;</h2>
+            <h2 className='h1-normal text-start mb-7 italic '>Gear;</h2>
             <div className='flex flex-col lg:flex-row text-center lg:text-left gap-y-12 lg:gap-x-8'>
               <div className='flex-1'>
                 <h3 className='gear-title'>Cameras</h3>

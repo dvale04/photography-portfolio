@@ -24,6 +24,7 @@ module.exports = {
         grey: '#484B4B',
         accent: '#EEF7F9',
         black: '#000000',
+        greyy: '#1C1C1C',
       },
     },
   },
