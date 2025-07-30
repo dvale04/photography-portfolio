@@ -1,6 +1,6 @@
 import React from 'react';
 // import images
-import AboutImg from '../img/about/about.png';
+import AboutImg from '../img/contact/about.png';
 import JTImg from '../img/about/jt-photo.png'; 
 import IsaiahImg from '../img/about/isaiah-photo.png'; 
 // import link
@@ -26,8 +26,10 @@ const Contact = () => {
         lg:text-left lg:pt-16'>
           {/* image */}
           <div className='flex-1 max-h-96 lg:max-h-max 
-          order-2 lg:order-none overflow-hidden'>
-            <img src={AboutImg} alt='' />
+          order-2 lg:order-none overflow-hidden 
+          '>
+            <img src={AboutImg} alt='' 
+            className='w-full h-auto object-cover max-w-[300px] lg:max-w-full' />
           </div>
           {/* text */}
           <motion.div 
@@ -64,7 +66,7 @@ const Contact = () => {
         </div>
 
           <div className='py-16 px-7'>
-            <h2 className='h1-normal text-start mb-7 italic '>Gear;</h2>
+            <h2 className='h1-normal text-start mb-7 italic text-grey '>Gear;</h2>
             <div className='flex flex-col lg:flex-row text-center lg:text-left gap-y-12 lg:gap-x-8'>
               <div className='flex-1'>
                 <h3 className='gear-title'>Cameras</h3>
