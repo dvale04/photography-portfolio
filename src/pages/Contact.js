@@ -21,15 +21,15 @@ const Contact = () => {
     > 
       <div className='container mx-auto relative'>
         {/* text & img wrapper */}
-        <div className='flex flex-col lg:flex-row min-h-screen 
+        <div className='flex flex-col md:flex-row min-h-screen 
         items-center justify-center gap-x-24 text-center 
-        lg:text-left lg:pt-16'>
+        md:text-left md:pt-10'>
           {/* image */}
-          <div className='flex-1 max-h-96 lg:max-h-max 
-          order-2 lg:order-none overflow-hidden 
+          <div className='flex-1 max-h-96 md:max-h-max 
+          overflow-hidden py-8
           '>
             <img src={AboutImg} alt='' 
-            className='w-full h-auto object-cover max-w-[300px] lg:max-w-full ' />
+            className='w-full h-auto object-cover max-w-[300px] md:max-w-full ' />
           </div>
           {/* text */}
           <motion.div 
@@ -37,9 +37,9 @@ const Contact = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={transition1}
-            className='flex-1 pt-36 pb-14 lg:pt-0
-            lg:w-auto z-10 flex flex-col justify-center 
-            items-center lg:items-start px-8'
+            className='flex-1 pt-4 pb-14 md:pt-0
+            md:w-auto z-10 flex flex-col justify-center 
+            items-center md:items-start px-8'
           >
             
             {/* Column 1 */}
@@ -67,7 +67,7 @@ const Contact = () => {
 
           <div className='py-16 px-7'>
             <h2 className='h1-normal text-start mb-7 italic text-grey '>Gear;</h2>
-            <div className='flex flex-col lg:flex-row text-center lg:text-left gap-y-12 lg:gap-x-8'>
+            <div className='flex flex-col md:flex-row text-center md:text-left gap-y-12 md:gap-x-8'>
               <div className='flex-1'>
                 <h3 className='gear-title'>Cameras</h3>
                 <ul className='gear-list'>
