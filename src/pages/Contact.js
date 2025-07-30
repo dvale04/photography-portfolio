@@ -29,7 +29,7 @@ const Contact = () => {
           order-2 lg:order-none overflow-hidden 
           '>
             <img src={AboutImg} alt='' 
-            className='w-full h-auto object-cover max-w-[300px] lg:max-w-full' />
+            className='w-full h-auto object-cover max-w-[300px] lg:max-w-full ' />
           </div>
           {/* text */}
           <motion.div 
