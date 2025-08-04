@@ -22,14 +22,14 @@ const Contact = () => {
       <div className='container mx-auto relative'>
         {/* text & img wrapper */}
         <div className='flex flex-col md:flex-row min-h-screen 
-        items-center justify-center gap-x-24 text-center 
-        md:text-left md:pt-10'>
+        items-center md:items-start justify-center sm:justify-start md:justify-start gap-x-24 text-center 
+        md:text-left pt-10 md:pt-20'>
           {/* image */}
           <div className='flex-1 max-h-96 md:max-h-max 
-          overflow-hidden py-8
+          overflow-hidden py-8 md:pt-10
           '>
             <img src={AboutImg} alt='' 
-            className='w-full h-auto object-cover max-w-[300px] md:max-w-full ' />
+            className='w-full h-auto object-cover max-w-[270px] md:max-w-full ' />
           </div>
           {/* text */}
           <motion.div 
@@ -37,7 +37,7 @@ const Contact = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={transition1}
-            className='flex-1 pt-4 pb-14 md:pt-0
+            className='flex-1 pt-14 pb-14 md:pt-17
             md:w-auto z-10 flex flex-col justify-center 
             items-center md:items-start px-8'
           >
