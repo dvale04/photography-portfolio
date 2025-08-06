@@ -22,26 +22,31 @@ const Contact = () => {
       <div className='container mx-auto relative'>
         {/* text & img wrapper */}
         <div className='flex flex-col md:flex-row min-h-screen 
-        items-center md:items-start justify-center sm:justify-start md:justify-start gap-x-24 text-center 
-        md:text-left pt-10 md:pt-20'>
-          {/* image */}
-          <div className='flex-1 max-h-96 md:max-h-max 
-          overflow-hidden py-8 md:pt-10
+        items-center md:items-start 
+        justify-center sm:justify-start md:justify-start gap-x-24 text-center 
+        md:text-left pt-3 md:pt-20'>
+          {/* image 
+
+          sm = small tablets and largers 
+          ml-[-10px] = applies on all screen sizes
+          md:ml-0 = removes it at 768px and up
+        So: phones under 768px get the left shift, and everything else doesn’t. */}
+          
+          <div className='flex-1 max-h-96 md:max-h-max overflow-hidden py-8 md:pt-10 ml-[-140px] md:ml-0
           '>
             <img src={AboutImg} alt='' 
-            className='w-full h-auto object-cover max-w-[270px] md:max-w-full ' />
+            className='w-full h-auto object-cover max-w-[270px] md:max-w-full' />
           </div>
           {/* text */}
           <motion.div 
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={transition1}
-            className='flex-1 pt-14 pb-14 md:pt-17
+            transition={transition1} 
+            className='flex-1 pt-6 pb-14 md:pt-17
             md:w-auto z-10 flex flex-col justify-center 
             items-center md:items-start px-8'
           >
-            
             {/* Column 1 */}
             <p className='about-title'>Co-Founder | Cinematographer, Photographer & Editor</p>
             <ul className='about-list text-left mx-auto max-w-sm'>
