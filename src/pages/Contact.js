@@ -69,7 +69,6 @@ const Contact = () => {
             </ul>
           </motion.div>
         </div>
-
           <div className='py-16 px-7'>
             <h2 className='h1-normal text-start mb-7 italic text-grey '>Gear;</h2>
             <div className='flex flex-col md:flex-row text-center md:text-left gap-y-12 md:gap-x-8'>
