@@ -38,7 +38,7 @@ const MobileNav = () => {
   }, [openMenu]);
 
   return (
-    <nav className='text-primary xl:hidden'>
+    <nav className='text-primary md:hidden'> 
       {/* nav open button plus sign x sign */}
       <motion.div 
         onClick={()=> setOpenMenu(!openMenu)} 
@@ -68,7 +68,7 @@ const MobileNav = () => {
             exit="hidden"
             className='bg-white shadow-3xl w-full fixed top-0 
             right-0 h-screen z-20'>
-            {/* menu List */}
+            {/* menu List or font-fifth*/}
             <ul className='h-full flex flex-col justify-center
             items-start gap-y-4 text-primary font-third text-4xl pl-8'> 
               <li>
