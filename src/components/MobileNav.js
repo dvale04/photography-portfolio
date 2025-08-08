@@ -68,9 +68,9 @@ const MobileNav = () => {
             exit="hidden"
             className='bg-white shadow-3xl w-full fixed top-0 
             right-0 h-screen z-20'>
-            {/* menu List or font-fifth*/}
+            {/* menu List .or font-fifth*/}
             <ul className='h-full flex flex-col justify-center
-            items-start gap-y-4 text-primary font-third text-4xl pl-8'> 
+            items-start gap-y-4 text-primary font-third text-5xl pl-8'> 
               <li>
                 <Link to='/portfolio' onClick={() => setOpenMenu(false)}>Portfolio</Link>
               </li>
