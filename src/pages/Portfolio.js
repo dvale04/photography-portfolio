@@ -57,7 +57,7 @@ const Portfolio = () => {
             key={index}
             className={`group relative overflow-hidden ${item.className}`}
           >
-            <img
+            <img 
               className='w-full h-full object-cover transition-all duration-500'
               src={item.src}
               alt={item.alt}
