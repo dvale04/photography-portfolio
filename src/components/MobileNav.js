@@ -44,7 +44,7 @@ const MobileNav = () => {
         onClick={()=> setOpenMenu(!openMenu)} 
         animate={{ rotate: openMenu ? 45 : 0 }}
         transition={{ duration: 0.3 }}
-        className='text-3xl cursor-pointer absolute top-9 right-9 z-50'>
+        className='text-3xl cursor-pointer absolute top-5 right-9 z-50'>
         <svg
           className={`w-6 h-6 stroke-[1.3] stroke-black transition-transform duration-300 ${
             openMenu ? 'rotate-25' : 'rotate-0'
