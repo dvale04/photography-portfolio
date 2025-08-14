@@ -1,10 +1,11 @@
 import React from 'react';
 // import pages
-import Home from '../pages/Home';
 import About from '../pages/About';
 import Prints from '../pages/3d-prints';
 import Portfolio from '../pages/Portfolio';
 import Contact from '../pages/Contact';
+import Error from '../pages/Error';
+
 
 // import routes route & useLocation hook
 import { Routes, Route, useLocation } from 'react-router-dom';
@@ -20,6 +21,7 @@ const AnimRoutes = () => {
         <Route path ='/3d-prints' element={<Prints />} /> 
         <Route path ='/portfolio' element={<Portfolio />} /> 
         <Route path ='/contact' element={<Contact />} /> 
+        <Route path ='/*' element={<Error />} /> 
       </Routes>
     </AnimatePresence>
     
