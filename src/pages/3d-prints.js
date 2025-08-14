@@ -1,6 +1,4 @@
 import React from 'react';
-// import images
-import JTImg from '../img/contact/jt-photo.png';
 // import motion 
 import { motion } from 'framer-motion';
 // import transition
@@ -22,7 +20,7 @@ const Prints = () => {
         {/* bg */}
         <motion.div 
           initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }}
+          animate={{ opacity: 0 }}
           exit={{ opacity: 0 }}
           transition={transition1}
           className='hidden lg:flex bg-[#eef7f9]
