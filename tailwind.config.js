@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: ['"EB Garamond"', 'serif'],
-      secondary: ['EB Garamond', 'serif'],
-      third: ['PT Serif', 'serif'],
+      secondary: ['"EB Garamond"', 'serif'],
+      third: ['"PT Serif"', 'serif'],
       fourth: ['Swear Display', 'serif'],
       fifth: ['Sorts Mill Goudy']
     },

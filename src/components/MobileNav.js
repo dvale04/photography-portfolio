@@ -75,7 +75,7 @@ const MobileNav = () => {
                 <Link to='/portfolio' onClick={() => setOpenMenu(false)}>Portfolio</Link>
               </li>
               <li>
-                <Link to='/about' onClick={() => setOpenMenu(false)}>3D prints</Link>
+                <Link to='/3d-prints' onClick={() => setOpenMenu(false)}>3D prints</Link>
               </li>
               <li>
                 <Link to='/contact' onClick={() => setOpenMenu(false)}>Contact</Link>
